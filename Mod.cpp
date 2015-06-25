@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 long int Mod(long int b,long int n,long int m);//返回结果为b^n(mod m)
-void main()//测试函数
+int main()//测试函数
 {
 	long int number;
 	cout<<"please input a number!\n";
@@ -9,9 +9,10 @@ void main()//测试函数
 	for(long int i=2;i<number;i++)
 	{
 		cout<<Mod(i,number-1,number)<<'\t';
-		if((t%10)==0)
+		if((i%10)==0)
 			cout<<endl;
 	}
+	return 0;
 }
 long int Mod(long int b,long int n,long int m)
 {
