@@ -8,9 +8,9 @@ int main()//²âÊÔº¯Êý
 	cin>>number;
 	for(long int i=2;i<number;i++)
 	{
-		cout<<Mod(i,number-1,number)<<'\t';
 		if((i%10)==0)
 			cout<<endl;
+		cout<<Mod(i,number-1,number)<<'\t';
 	}
 	return 0;
 }
